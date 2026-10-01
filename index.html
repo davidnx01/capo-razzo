@@ -1,0 +1,321 @@
+<!doctype html><html lang="sk"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>CAPO RAZZO barbershop · pánske holičstvo v Rožňave — neoficiálny návrh</title>
+<meta name="description" content="Neoficiálny návrh homepage pre CAPO RAZZO barbershop, Jasná 32, Rožňava. Pánske strihy, úprava a holenie brady, darčekové poukážky.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@400;500;600;700&family=Tilt+Warp&display=swap" rel="stylesheet">
+<style>
+:root{
+  --space:#1E2457;   /* zem: nočná obloha, ich modrofialová */
+  --space-2:#151A42;
+  --red:#E2412F;     /* akcent: červená z loga a plameňa */
+  --chrome:#CDD1DA;  /* materiál: chróm rakety a britvy */
+  --sheet:#E7E6E1;   /* papier plagátu, studený */
+  --star:#F2B53A;
+  --ink:#151A42;
+  --mute:#4E5370;
+  --hair:rgba(21,26,66,.18);
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--sheet);color:var(--ink);font:400 18px/1.55 "IBM Plex Sans Condensed",system-ui,sans-serif}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--star);outline-offset:3px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 32px}
+.lbl{font-size:13px;font-weight:600;letter-spacing:.2em;text-transform:uppercase}
+.num{font-variant-numeric:tabular-nums}
+h1,h2,h3{font-family:"Tilt Warp",system-ui,sans-serif;font-weight:400;margin:0;line-height:1.02}
+
+.notice{background:var(--space-2);color:#DDE0EE;font-size:13.5px;line-height:1.45;padding:9px 0;border-bottom:1px solid rgba(255,255,255,.12)}
+.notice p{margin:0}
+
+header{background:var(--space);color:#fff}
+.hd{display:flex;align-items:center;gap:26px;min-height:72px}
+.brand{text-decoration:none;margin-right:auto;font:400 23px/1 "Tilt Warp",sans-serif;letter-spacing:.01em}
+.brand small{font:600 11px/1 "IBM Plex Sans Condensed",sans-serif;letter-spacing:.22em;text-transform:uppercase;opacity:.7;margin-left:8px;vertical-align:3px}
+nav{display:flex;gap:22px}
+nav a,.ul{text-decoration:none;font-weight:500;font-size:16px;background:linear-gradient(currentColor,currentColor) 0 100%/0 1px no-repeat;transition:background-size .2s}
+nav a:hover,.ul:hover{background-size:100% 1px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 24px;background:var(--red);color:#fff;text-decoration:none;font-weight:700;font-size:16.5px;letter-spacing:.02em;border-radius:24px 24px 24px 4px;transition:background-color .2s}
+.btn:hover{background:#C3301F}
+.btn.ghost{background:transparent;box-shadow:inset 0 0 0 2px currentColor}
+.btn.ghost:hover{background:#fff;color:var(--space)}
+
+/* hero plagát */
+.hero{background:var(--space);color:#fff;position:relative;overflow:hidden;padding:56px 0 0}
+.hero .stars{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.hero-grid{position:relative;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,420px);gap:40px;align-items:end;min-height:min(600px,82vh)}
+.hero-txt{padding-bottom:70px}
+.hero .lbl{color:var(--star)}
+.hero h1{font-size:clamp(64px,10vw,132px);line-height:.9;margin:18px 0 10px;letter-spacing:-.01em}
+.hero h1 span{display:block;font-family:"IBM Plex Sans Condensed",sans-serif;font-weight:500;font-size:.24em;letter-spacing:.32em;text-transform:uppercase;color:var(--chrome);margin-top:16px}
+.hero .lead{font-size:20px;line-height:1.5;max-width:30em;margin:22px 0 4px;color:#E6E8F2}
+.hero .src{font-size:13.5px;color:#AEB3CC;margin:0}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.rocket{position:relative;width:100%;max-width:400px;justify-self:center;aspect-ratio:400/640;margin-bottom:-2px}
+.rocket svg{position:absolute;inset:0;width:100%;height:100%}
+.rocket .port{position:absolute;left:24.5%;top:31.1%;width:51%;aspect-ratio:1;border-radius:50%;overflow:hidden;background:var(--space-2)}
+.rocket .port img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.rocket:hover .port img{transform:scale(1.045)}
+.ground{position:relative;height:28px;background:var(--space-2)}
+
+/* dôveryhodné fakty */
+.facts{background:var(--space-2);color:#fff;padding:0 0 30px}
+.facts-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid rgba(255,255,255,.2)}
+.facts-row div{padding:18px 22px 0 0}
+.facts-row div+div{padding-left:22px;border-left:1px solid rgba(255,255,255,.2)}
+.facts-row b{display:block;font:400 30px/1.1 "Tilt Warp",sans-serif;font-variant-numeric:tabular-nums;color:var(--star)}
+.facts-row span{font-size:15px;color:#C8CCE0}
+
+/* money block */
+.svc{background:var(--red);color:#fff;padding:80px 0}
+.svc-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,360px);gap:64px;align-items:start}
+.svc .lbl{color:var(--space-2)}
+.svc h2{font-size:clamp(40px,5.4vw,68px);margin:12px 0 30px}
+.list{list-style:none;margin:0;padding:0;border-top:2px solid var(--space-2)}
+.list li{display:flex;justify-content:space-between;align-items:baseline;gap:20px;padding:16px 0;border-bottom:1px solid rgba(21,26,66,.35)}
+.list .n{font:400 clamp(22px,2.4vw,30px)/1.15 "Tilt Warp",sans-serif}
+.list .p{font-size:15px;font-weight:600;color:var(--space-2);text-align:right;white-space:nowrap}
+.svc .note{font-size:15px;margin:20px 0 0;max-width:58ch}
+.voucher{background:var(--sheet);color:var(--ink);padding:14px 14px 18px;border-radius:4px;transform:rotate(1.5deg)}
+.voucher img{width:100%;max-width:340px;border-radius:2px}
+.voucher h3{font-size:26px;margin:16px 4px 6px}
+.voucher p{margin:0 4px;font-size:15.5px;line-height:1.45}
+.voucher .src{font-size:13px;color:var(--mute);margin-top:8px}
+
+/* ocenenia = obežné dráhy */
+.awards{padding:84px 0 40px}
+.aw-grid{display:grid;grid-template-columns:minmax(0,380px) minmax(0,1fr);gap:56px;align-items:center}
+.awards .lbl{color:var(--red)}
+.awards h2{font-size:clamp(36px,4.4vw,54px);margin:12px 0 16px}
+.score{display:flex;align-items:flex-end;gap:14px}
+.score b{font:400 clamp(96px,12vw,140px)/.85 "Tilt Warp",sans-serif;color:var(--space)}
+.score span{font-size:16px;color:var(--mute);padding-bottom:8px;line-height:1.35}
+.awards .src{font-size:14px;color:var(--mute);margin:16px 0 0}
+.orbit{position:relative;padding:30px 0}
+.orbit::before{content:"";position:absolute;left:3%;right:3%;top:50%;height:150px;transform:translateY(-50%);border:1.5px dashed var(--hair);border-radius:50%}
+.planets{position:relative;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;list-style:none;margin:0;padding:0}
+.planets li{display:flex;flex-direction:column;align-items:center;text-align:center;gap:10px}
+.planets i{display:grid;place-items:center;width:clamp(74px,9vw,110px);aspect-ratio:1;border-radius:50%;font:400 clamp(18px,2vw,24px)/1 "Tilt Warp",sans-serif;font-style:normal;color:var(--space-2);background:#E9B949;box-shadow:inset -10px -8px 0 rgba(0,0,0,.12)}
+.planets li.s i{background:#BFC4CE}
+.planets span{font-size:14.5px;font-weight:600}
+.planets small{display:block;font-weight:400;color:var(--mute);font-size:13px}
+
+/* okná kabíny */
+.cabin{padding:48px 0 84px}
+.cabin .wrap{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:48px;align-items:center}
+.cabin .lbl{color:var(--red)}
+.cabin h2{font-size:clamp(34px,4vw,50px);margin-top:12px}
+.cabin-head p{margin:14px 0 0;font-size:15px;color:var(--mute);max-width:40ch}
+.wins{display:grid;grid-template-columns:repeat(2,auto);justify-content:start;gap:28px;align-items:end}
+.win{margin:0}
+.win .fr{padding:10px;background:var(--chrome);border-radius:999px;box-shadow:inset 0 0 0 2px rgba(21,26,66,.25);position:relative}
+.win .fr img{border-radius:999px;transition:transform .5s}
+.win .fr:hover img{transform:scale(1.045)}
+.win .fr{overflow:hidden}
+.win.pill .fr img{width:315px;height:175px;object-fit:cover}
+.win.pill.b .fr img{width:300px;height:133px;object-position:50% 40%}
+.win figcaption{font-size:14px;color:var(--mute);margin-top:10px;padding-left:12px}
+
+/* kontakt */
+.contact{background:var(--space);color:#fff;padding:76px 0 84px;position:relative;overflow:hidden}
+.ct-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:56px;position:relative}
+.contact .lbl{color:var(--star)}
+.contact h2{font-size:clamp(38px,4.8vw,60px);margin:12px 0 22px}
+.contact dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:0 24px}
+.contact dt,.contact dd{margin:0;padding:13px 0;border-bottom:1px solid rgba(255,255,255,.18)}
+.contact dt{font-size:12.5px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:#AEB3CC;padding-top:16px}
+.contact dd{font-size:17.5px}
+.contact dd small{display:block;color:#AEB3CC;font-size:14px}
+.acts{display:flex;flex-direction:column;gap:12px;align-self:end}
+.acts .btn{justify-content:space-between}
+.acts .btn.ghost{color:#fff}
+
+footer{background:var(--space-2);color:#AEB3CC;font-size:14px;padding:24px 0 calc(24px + env(safe-area-inset-bottom))}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+footer a{color:#fff}
+.mbar{display:none}
+
+@media (max-width:980px){
+  nav{display:none}
+  .hero-grid{grid-template-columns:1fr;min-height:0;gap:0}
+  .hero-txt{padding-bottom:36px}
+  .rocket{max-width:300px}
+  .svc-grid,.aw-grid,.ct-grid{grid-template-columns:1fr;gap:44px}
+  .voucher{max-width:380px}
+  .cabin .wrap{grid-template-columns:1fr;gap:28px}
+}
+@media (max-width:640px){
+  .wrap{padding:0 16px}
+  body{padding-bottom:calc(68px + env(safe-area-inset-bottom))}
+  .hd{min-height:62px}
+  .hd .btn{display:none}
+  .hero{padding-top:40px}
+  .hero .stars circle{display:none}
+  .hero .lead{font-size:18px}
+  .facts-row{grid-template-columns:1fr}
+  .facts-row div,.facts-row div+div{padding:14px 0;border-left:0;border-bottom:1px solid rgba(255,255,255,.2)}
+  .svc{padding:56px 0}
+  .list li{flex-direction:column;gap:2px}
+  .list .p{text-align:left}
+  .awards{padding:56px 0 24px}
+  .planets{grid-template-columns:1fr 1fr;row-gap:22px}
+  .orbit::before{display:none}
+  .wins{grid-template-columns:1fr;justify-items:start}
+  .win.pill .fr img,.win.pill.b .fr img{width:100%;max-width:315px;height:auto;aspect-ratio:315/175}
+  .contact{padding:56px 0 64px}
+  .contact dl{grid-template-columns:1fr}
+  .contact dt{border-bottom:0;padding:12px 0 0}
+  .contact dd{padding-top:2px}
+  .mbar{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:40;background:var(--space-2);padding:8px 10px calc(8px + env(safe-area-inset-bottom))}
+  .mbar a{min-height:50px;display:flex;align-items:center;justify-content:center;text-decoration:none;color:#fff;font-weight:700;font-size:16px;border-radius:25px 25px 25px 4px;box-shadow:inset 0 0 0 2px rgba(255,255,255,.6)}
+  .mbar a:first-child{background:var(--red);box-shadow:none}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="notice"><div class="wrap"><p>Neoficiálny návrh — nie je to oficiálny web podniku · ukážka od webdavid.sk, objednávky ani rezervácie tu nefungujú</p></div></div>
+
+<header>
+  <div class="wrap hd">
+    <a class="brand" href="#top">CAPO RAZZO<small>barbershop</small></a>
+    <nav aria-label="Hlavná navigácia"><a href="#sluzby">Služby</a><a href="#ocenenia">Ocenenia</a><a href="#prace">Práce</a><a href="#kontakt">Kontakt</a></nav>
+    <a class="btn" href="https://www.facebook.com/caporazzobarbershop/" rel="noopener">Napísať na Facebooku</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <svg class="stars" viewBox="0 0 1200 640" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <g fill="#F2B53A">
+        <path d="M640 70l5 15 15 5-15 5-5 15-5-15-15-5 15-5z"/>
+        <path d="M1120 120l4 11 11 4-11 4-4 11-4-11-11-4 11-4z"/>
+        <path d="M80 520l4 11 11 4-11 4-4 11-4-11-11-4 11-4z"/>
+        <path d="M720 430l3 8 8 3-8 3-3 8-3-8-8-3 8-3z"/>
+      </g>
+      <g fill="#CDD1DA" opacity=".55">
+        <circle cx="540" cy="160" r="2"/><circle cx="210" cy="60" r="1.6"/><circle cx="900" cy="60" r="2"/><circle cx="1080" cy="300" r="1.6"/><circle cx="760" cy="250" r="1.4"/><circle cx="420" cy="560" r="1.6"/><circle cx="1160" cy="520" r="2"/><circle cx="330" cy="300" r="1.2"/>
+      </g>
+      <ellipse cx="930" cy="360" rx="330" ry="90" fill="none" stroke="#CDD1DA" stroke-opacity=".22" stroke-width="1.5" transform="rotate(-14 930 360)"/>
+    </svg>
+    <div class="wrap hero-grid">
+      <div class="hero-txt">
+        <p class="lbl">Pánske holičstvo · Jasná 32 · Rožňava</p>
+        <h1>CAPO RAZZO<span>barbershop · cut &amp; shave</span></h1>
+        <p class="lead">„…funguje ako moderné pánske holičstvo zamerané na dôkladnú starostlivosť o vlasy a bradu mužov.“</p>
+        <p class="src">— popis na profile Orly Kaderníctva</p>
+        <div class="ctas">
+          <a class="btn" href="https://www.facebook.com/caporazzobarbershop/" rel="noopener">Dohodnúť termín cez Facebook</a>
+          <a class="btn ghost" href="https://www.google.com/maps/search/CAPO+RAZZO+barbershop+Ro%C5%BE%C5%88ava" rel="noopener">Trasa na Jasnú 32</a>
+        </div>
+      </div>
+      <div class="rocket">
+        <svg viewBox="0 0 400 640" aria-hidden="true">
+          <path d="M150 500Q200 650 250 500Z" fill="#F2B53A"/>
+          <path d="M172 500Q200 590 228 500Z" fill="#E2412F"/>
+          <path d="M92 350L28 462V548L92 494Z" fill="#E2412F"/>
+          <path d="M308 350L372 462V548L308 494Z" fill="#E2412F"/>
+          <path d="M200 18C268 66 308 148 308 220V470Q308 500 278 500H122Q92 500 92 470V220C92 148 132 66 200 18Z" fill="#CDD1DA"/>
+          <path d="M200 18C268 66 308 148 308 220V470Q308 500 278 500H232V40C221 32 211 25 200 18Z" fill="#000" opacity=".08"/>
+          <path d="M200 18C246 52 279 100 296 150H104C121 100 154 52 200 18Z" fill="#E2412F"/>
+          <rect x="92" y="420" width="216" height="18" fill="#1E2457"/>
+          <rect x="186" y="440" width="28" height="104" rx="4" fill="#E2412F"/>
+          <circle cx="200" cy="300" r="118" fill="#151A42" stroke="#9CA2B2" stroke-width="10"/>
+          <g fill="#7D8496"><circle cx="200" cy="168" r="4"/><circle cx="332" cy="300" r="4"/><circle cx="293" cy="207" r="4"/><circle cx="107" cy="207" r="4"/><circle cx="293" cy="393" r="4"/><circle cx="107" cy="393" r="4"/></g>
+          <g fill="#7D8496"><circle cx="110" cy="470" r="3.5"/><circle cx="140" cy="470" r="3.5"/><circle cx="260" cy="470" r="3.5"/><circle cx="290" cy="470" r="3.5"/></g>
+        </svg>
+        <div class="port"><img src="assets/strih-fade-zozadu.webp" width="315" height="315" fetchpriority="high" alt="Pánsky strih s ostrým prechodom a uhladeným vrchom, pohľad zboku zozadu"></div>
+      </div>
+    </div>
+    <div class="ground" aria-hidden="true"></div>
+  </section>
+
+  <section class="facts" aria-label="Hodnotenie v skratke">
+    <div class="wrap facts-row">
+      <div><b class="num">9,8 / 10</b><span>Orly Kaderníctva, 47 hodnotení</span></div>
+      <div><b class="num">2024–2026</b><span>zlatá medaila Orly, tri roky po sebe</span></div>
+      <div><b>III. miesto</b><span>v rebríčku Rožňavy na Orly</span></div>
+    </div>
+  </section>
+
+  <section class="svc" id="sluzby" aria-labelledby="svc-h">
+    <div class="wrap svc-grid">
+      <div>
+        <p class="lbl">Palubný zoznam</p>
+        <h2 id="svc-h">Služby na štart</h2>
+        <ul class="list">
+          <li><span class="n">Pánsky strih</span><span class="p">cena doplní podnik</span></li>
+          <li><span class="n">Juniorský strih</span><span class="p">cena doplní podnik</span></li>
+          <li><span class="n">Úprava a holenie brady</span><span class="p">cena doplní podnik</span></li>
+          <li><span class="n">Holenie hlavy</span><span class="p">cena doplní podnik</span></li>
+          <li><span class="n">Umývanie vlasov a styling</span><span class="p">cena doplní podnik</span></li>
+        </ul>
+        <p class="note">Ukážka návrhu: služby podľa profilu na Orly Kaderníctva a príspevku na ich Facebooku (juniorský strih); ceny verejne uvedené nie sú, cenník doplní podnik.</p>
+      </div>
+      <aside class="voucher">
+        <img src="assets/darcekova-poukazka.webp" width="315" height="315" loading="lazy" alt="Darčeková poukážka CAPO RAZZO barbershop na strih medzi vianočnými ozdobami">
+        <h3>Darčeková poukážka</h3>
+        <p>Strih ako darček. Darčekovú poukážku uvádza ich profil na Orly, podmienky a hodnotu overiť priamo v holičstve.</p>
+        <p class="src">Foto: Facebook CAPO RAZZO · poukážka uvedená na Orly</p>
+      </aside>
+    </div>
+  </section>
+
+  <section class="awards" id="ocenenia" aria-labelledby="aw-h">
+    <div class="wrap aw-grid">
+      <div>
+        <p class="lbl">Ocenenia a hodnotenie</p>
+        <h2 id="aw-h">Na obežnej dráhe Orly</h2>
+        <div class="score"><b class="num">9,8</b><span>z 10<br>47 hodnotení</span></div>
+        <p class="src">Zdroj: orlykadernictva.eu, profil a rebríček mesta Rožňava, 1. 10. 2026.</p>
+      </div>
+      <div class="orbit">
+        <ul class="planets">
+          <li class="s"><i class="num">2023</i><span>strieborná<small>laureát Orly</small></span></li>
+          <li><i class="num">2024</i><span>zlatá<small>laureát Orly</small></span></li>
+          <li><i class="num">2025</i><span>zlatá<small>laureát Orly</small></span></li>
+          <li><i class="num">2026</i><span>zlatá<small>laureát Orly</small></span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="cabin" id="prace" aria-labelledby="cab-h">
+    <div class="wrap">
+      <div class="cabin-head">
+        <p class="lbl">Výhľad z kabíny</p><h2 id="cab-h">Strihy a brady</h2>
+        <p>Fotky z ich Facebooku. Ukážka návrhu: galériu je možné doplniť o ďalšie práce vo vyššom rozlíšení.</p>
+      </div>
+      <div class="wins">
+        <figure class="win pill"><div class="fr"><img src="assets/uprava-brady.webp" width="315" height="175" loading="lazy" alt="Detail upravenej sivej brady a čistej línie na krku"></div><figcaption>Úprava brady</figcaption></figure>
+        <figure class="win pill b"><div class="fr"><img src="assets/ucesany-strih-detail.webp" width="260" height="115" loading="lazy" alt="Detail uhladených vlasov s pomádou, česaných dozadu"></div><figcaption>Klasický účes s pomádou</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="kontakt" aria-labelledby="ct-h">
+    <div class="wrap ct-grid">
+      <div>
+        <p class="lbl">Súradnice pristátia</p>
+        <h2 id="ct-h">Jasná 32, Rožňava</h2>
+        <dl>
+          <dt>Adresa</dt><dd>Jasná 32, 048 01 Rožňava</dd>
+          <dt>Telefón</dt><dd><a class="ul num" href="tel:+421940828278">0940 828 278</a><small>uvedené na ich Facebooku; v popise stránky je pri rezervácii aj +421 903 691 480 — overiť</small></dd>
+          <dt>Hodiny</dt><dd>zatiaľ neuvedené<small>zdroje otváracie hodiny neuvádzajú — overiť pred návštevou</small></dd>
+          <dt>Instagram</dt><dd><a class="ul" href="https://www.instagram.com/caporazzo_barbershop/" rel="noopener">@caporazzo_barbershop</a></dd>
+        </dl>
+      </div>
+      <div class="acts">
+        <a class="btn" href="https://www.facebook.com/caporazzobarbershop/" rel="noopener">Facebook CAPO RAZZO <span aria-hidden="true">→</span></a>
+        <a class="btn ghost" href="https://www.google.com/maps/search/CAPO+RAZZO+barbershop+Ro%C5%BE%C5%88ava" rel="noopener">Trasa v Google Maps <span aria-hidden="true">→</span></a>
+        <a class="btn ghost" href="https://www.orlykadernictva.eu/profile-1427-capo-razzo-barbershop" rel="noopener">Profil na Orly Kaderníctva <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap"><span>Neoficiálny návrh webu · webdavid.sk · 2026</span><a href="https://webdavid.sk" rel="noopener">webdavid.sk</a></div></footer>
+<nav class="mbar" aria-label="Rýchle akcie"><a href="https://www.facebook.com/caporazzobarbershop/" rel="noopener">Facebook</a><a href="https://www.google.com/maps/search/CAPO+RAZZO+barbershop+Ro%C5%BE%C5%88ava" rel="noopener">Trasa</a></nav>
